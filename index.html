@@ -9,29 +9,30 @@
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
-background:#0f172a;
-color:white;
+background:#f1f5f9;
+color:#1e293b;
 }
 
 header{
-background:#020617;
-padding:20px;
+background:#0f172a;
+color:white;
+padding:25px;
 text-align:center;
 font-size:28px;
 font-weight:bold;
 }
 
 nav{
+background:#1e293b;
 text-align:center;
-background:#020617;
-padding:10px;
+padding:12px;
 }
 
 nav a{
 color:white;
-margin:10px;
+margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -39,13 +40,19 @@ font-weight:bold;
 .hero{
 padding:120px 20px;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://images.unsplash.com/photo-1605902711622-cfb43c4437d1");
+background:linear-gradient(rgba(15,23,42,0.8),rgba(15,23,42,0.8)),url("https://images.unsplash.com/photo-1554224155-6726b3ff858f");
 background-size:cover;
 background-position:center;
+color:white;
 }
 
 .hero h1{
-font-size:42px;
+font-size:44px;
+}
+
+.hero p{
+font-size:20px;
+margin-top:10px;
 }
 
 button{
@@ -55,10 +62,12 @@ padding:15px 30px;
 font-size:18px;
 border-radius:8px;
 cursor:pointer;
+color:#0f172a;
+font-weight:bold;
 }
 
 section{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
@@ -67,33 +76,49 @@ display:flex;
 justify-content:center;
 flex-wrap:wrap;
 gap:30px;
+margin-top:40px;
 }
 
 .card{
-background:#1e293b;
+background:white;
 padding:25px;
 border-radius:10px;
 width:220px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+font-weight:bold;
 }
 
 form input, form select{
-padding:10px;
+padding:12px;
 margin:10px;
-width:250px;
+width:260px;
 border-radius:6px;
-border:none;
+border:1px solid #cbd5f5;
+}
+
+form button{
+margin-top:10px;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25d366;
-padding:15px 20px;
-border-radius:30px;
+padding:18px 22px;
+border-radius:40px;
 color:white;
 font-weight:bold;
 text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+footer{
+background:#0f172a;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:50px;
 }
 
 </style>
@@ -121,6 +146,8 @@ L&L Soluções Financeiras
 <h1>Crédito rápido, seguro e sem burocracia</h1>
 
 <p>FGTS • INSS • Bolsa Família • Limpa Nome</p>
+
+<br>
 
 <button onclick="document.getElementById('simulacao').scrollIntoView()">Simular Agora</button>
 
@@ -152,13 +179,13 @@ L&L Soluções Financeiras
 
 <div class="services">
 
-<div class="card">Atendimento rápido e humanizado</div>
+<div class="card">Atendimento rápido</div>
 
-<div class="card">Parcerias com instituições confiáveis</div>
+<div class="card">Sem burocracia</div>
 
-<div class="card">Crédito facilitado e sem burocracia</div>
+<div class="card">Instituições confiáveis</div>
 
-<div class="card">Suporte completo até a liberação</div>
+<div class="card">Acompanhamento completo</div>
 
 </div>
 
@@ -169,6 +196,8 @@ L&L Soluções Financeiras
 <h2>Simulação de Crédito</h2>
 
 <form>
+
+<br>
 
 <input placeholder="Nome completo">
 
@@ -216,7 +245,7 @@ L&L Soluções Financeiras
 
 <p>
 A L&L Soluções Financeiras nasceu com o objetivo de facilitar o acesso ao crédito de forma rápida, segura e sem burocracia.
-Atuamos em Campinas e região conectando clientes às melhores oportunidades financeiras do mercado.
+Atendemos clientes em Campinas e região oferecendo soluções financeiras confiáveis.
 </p>
 
 <p>
@@ -232,6 +261,8 @@ Trabalhamos com instituições reconhecidas como Facta Financeira, C6 Bank, Cref
 <p>Quer trabalhar com crédito e aumentar sua renda? Cadastre-se para ser um consultor da L&L.</p>
 
 <form>
+
+<br>
 
 <input placeholder="Nome">
 
@@ -250,6 +281,12 @@ Trabalhamos com instituições reconhecidas como Facta Financeira, C6 Bank, Cref
 </form>
 
 </section>
+
+<footer>
+
+L&L Soluções Financeiras • Campinas - SP
+
+</footer>
 
 <a class="whatsapp" href="https://wa.me/5519987062446?text=Olá vim pelo site da L&L Soluções Financeiras e quero fazer uma simulação">WhatsApp</a>
 
