@@ -9,37 +9,61 @@
 body{
 font-family: Arial;
 margin:0;
-background:#0f1c2e;
+background:#0f172a;
 color:white;
 }
 
 header{
-background:#0a1422;
+background:#020617;
 padding:20px;
 text-align:center;
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 }
 
-section{
-padding:40px;
+.hero{
+padding:100px 20px;
 text-align:center;
+background-image:url("https://images.unsplash.com/photo-1554224155-6726b3ff858f");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:42px;
 }
 
 button{
 background:#d4af37;
 border:none;
-padding:15px 25px;
+padding:15px 30px;
 font-size:18px;
 border-radius:8px;
 cursor:pointer;
 }
 
-form{
-margin-top:30px;
+.services{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:50px;
+flex-wrap:wrap;
 }
 
-input, select{
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+width:200px;
+text-align:center;
+}
+
+form{
+padding:40px;
+text-align:center;
+}
+
+input,select{
 padding:10px;
 margin:10px;
 width:250px;
@@ -52,10 +76,10 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25d366;
-color:white;
 padding:15px;
 border-radius:50%;
-font-size:20px;
+color:white;
+font-weight:bold;
 }
 
 </style>
@@ -68,17 +92,33 @@ font-size:20px;
 L&L Soluções Financeiras
 </header>
 
-<section>
+<section class="hero">
 
-<h1>Realize seus planos com crédito rápido e seguro</h1>
+<h1>Crédito rápido e sem burocracia</h1>
 
-<p>FGTS • INSS • Bolsa Família • Crédito na Conta de Energia</p>
+<p>FGTS • INSS • Bolsa Família • Conta de Energia</p>
 
-<button onclick="mostrar()">Simular Crédito</button>
+<button onclick="document.getElementById('simulacao').scrollIntoView()">Simular Crédito</button>
 
-<form id="form" style="display:none">
+</section>
 
-<br>
+<section class="services">
+
+<div class="card">Antecipação FGTS</div>
+
+<div class="card">Crédito INSS</div>
+
+<div class="card">Bolsa Família</div>
+
+<div class="card">Conta de Energia</div>
+
+</section>
+
+<section id="simulacao">
+
+<h2 style="text-align:center;">Simulação de Crédito</h2>
+
+<form>
 
 <input placeholder="Seu nome">
 
@@ -112,21 +152,13 @@ L&L Soluções Financeiras
 
 <br>
 
-<button>Enviar simulação</button>
+<button>Enviar Simulação</button>
 
 </form>
 
 </section>
 
 <a class="whatsapp" href="https://wa.me/">WhatsApp</a>
-
-<script>
-
-function mostrar(){
-document.getElementById("form").style.display="block"
-}
-
-</script>
 
 </body>
 </html>
