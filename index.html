@@ -15,22 +15,31 @@ color:white;
 
 header{
 background:#020617;
-padding:20px;
-text-align:center;
-font-size:30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.logo{
+font-size:24px;
 font-weight:bold;
 }
 
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
 .hero{
-padding:100px 20px;
+padding:80px;
 text-align:center;
-background-image:url("https://images.unsplash.com/photo-1554224155-6726b3ff858f");
-background-size:cover;
-background-position:center;
+background:#1e293b;
 }
 
 .hero h1{
-font-size:42px;
+font-size:40px;
 }
 
 button{
@@ -46,8 +55,8 @@ cursor:pointer;
 display:flex;
 justify-content:center;
 gap:30px;
-padding:50px;
 flex-wrap:wrap;
+padding:40px;
 }
 
 .card{
@@ -58,8 +67,11 @@ width:200px;
 text-align:center;
 }
 
+section{
+padding:60px;
+}
+
 form{
-padding:40px;
 text-align:center;
 }
 
@@ -83,26 +95,41 @@ font-weight:bold;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-L&L Soluções Financeiras
+
+<div class="logo">L&L Soluções Financeiras</div>
+
+<nav>
+
+<a href="#">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#simulacao">Simular</a>
+<a href="#sobre">Sobre</a>
+<a href="#consultor">Seja Consultor</a>
+
+</nav>
+
 </header>
 
 <section class="hero">
 
 <h1>Crédito rápido e sem burocracia</h1>
 
-<p>FGTS • INSS • Bolsa Família • Conta de Energia</p>
+<p>FGTS • INSS • Bolsa Família • Limpa Nome</p>
 
-<button onclick="document.getElementById('simulacao').scrollIntoView()">Simular Crédito</button>
+<button onclick="document.getElementById('simulacao').scrollIntoView()">Simular Agora</button>
 
 </section>
 
-<section class="services">
+<section id="servicos">
+
+<h2 style="text-align:center">Nossos Serviços</h2>
+
+<div class="services">
 
 <div class="card">Antecipação FGTS</div>
 
@@ -112,15 +139,19 @@ L&L Soluções Financeiras
 
 <div class="card">Conta de Energia</div>
 
+<div class="card">Limpa Nome</div>
+
+</div>
+
 </section>
 
 <section id="simulacao">
 
-<h2 style="text-align:center;">Simulação de Crédito</h2>
+<h2 style="text-align:center">Simulação de Crédito</h2>
 
 <form>
 
-<input placeholder="Seu nome">
+<input placeholder="Nome completo">
 
 <br>
 
@@ -135,14 +166,11 @@ L&L Soluções Financeiras
 <select>
 
 <option>Tipo de crédito</option>
-
-<option>Antecipação FGTS</option>
-
-<option>Crédito INSS</option>
-
+<option>FGTS</option>
+<option>INSS</option>
 <option>Bolsa Família</option>
-
-<option>Conta de Energia</option>
+<option>Conta de energia</option>
+<option>Limpa nome</option>
 
 </select>
 
@@ -153,6 +181,48 @@ L&L Soluções Financeiras
 <br>
 
 <button>Enviar Simulação</button>
+
+</form>
+
+</section>
+
+<section id="sobre">
+
+<h2>Sobre a L&L</h2>
+
+<p>
+
+A L&L Soluções Financeiras nasceu com o objetivo de facilitar o acesso ao crédito de forma rápida, segura e sem burocracia.
+
+Trabalhamos com diversas instituições financeiras para oferecer as melhores soluções para nossos clientes.
+
+Nosso compromisso é ajudar pessoas a conquistar seus objetivos através de soluções financeiras acessíveis.
+
+</p>
+
+</section>
+
+<section id="consultor">
+
+<h2>Faça parte do nosso time</h2>
+
+<p>Quer trabalhar com crédito e aumentar sua renda? Cadastre-se para ser um consultor da L&L.</p>
+
+<form>
+
+<input placeholder="Nome">
+
+<br>
+
+<input placeholder="Cidade">
+
+<br>
+
+<input placeholder="WhatsApp">
+
+<br>
+
+<button>Quero ser consultor</button>
 
 </form>
 
