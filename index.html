@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <title>L&L Soluções Financeiras</title>
 
@@ -15,31 +17,35 @@ color:white;
 
 header{
 background:#020617;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
 }
 
-.logo{
-font-size:24px;
-font-weight:bold;
+nav{
+text-align:center;
+background:#020617;
+padding:10px;
 }
 
 nav a{
 color:white;
 margin:10px;
 text-decoration:none;
+font-weight:bold;
 }
 
 .hero{
-padding:80px;
+padding:120px 20px;
 text-align:center;
-background:#1e293b;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://images.unsplash.com/photo-1605902711622-cfb43c4437d1");
+background-size:cover;
+background-position:center;
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 }
 
 button{
@@ -51,31 +57,26 @@ border-radius:8px;
 cursor:pointer;
 }
 
+section{
+padding:60px 20px;
+text-align:center;
+}
+
 .services{
 display:flex;
 justify-content:center;
-gap:30px;
 flex-wrap:wrap;
-padding:40px;
+gap:30px;
 }
 
 .card{
 background:#1e293b;
-padding:30px;
+padding:25px;
 border-radius:10px;
-width:200px;
-text-align:center;
+width:220px;
 }
 
-section{
-padding:60px;
-}
-
-form{
-text-align:center;
-}
-
-input,select{
+form input, form select{
 padding:10px;
 margin:10px;
 width:250px;
@@ -88,36 +89,36 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25d366;
-padding:15px;
-border-radius:50%;
+padding:15px 20px;
+border-radius:30px;
 color:white;
 font-weight:bold;
+text-decoration:none;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-
-<div class="logo">L&L Soluções Financeiras</div>
+L&L Soluções Financeiras
+<br>
+<span style="font-size:16px;">Campinas - SP</span>
+</header>
 
 <nav>
-
 <a href="#">Início</a>
 <a href="#servicos">Serviços</a>
 <a href="#simulacao">Simular</a>
 <a href="#sobre">Sobre</a>
 <a href="#consultor">Seja Consultor</a>
-
 </nav>
-
-</header>
 
 <section class="hero">
 
-<h1>Crédito rápido e sem burocracia</h1>
+<h1>Crédito rápido, seguro e sem burocracia</h1>
 
 <p>FGTS • INSS • Bolsa Família • Limpa Nome</p>
 
@@ -127,7 +128,7 @@ font-weight:bold;
 
 <section id="servicos">
 
-<h2 style="text-align:center">Nossos Serviços</h2>
+<h2>Nossos Serviços</h2>
 
 <div class="services">
 
@@ -145,9 +146,27 @@ font-weight:bold;
 
 </section>
 
+<section>
+
+<h2>Por que escolher a L&L?</h2>
+
+<div class="services">
+
+<div class="card">Atendimento rápido e humanizado</div>
+
+<div class="card">Parcerias com instituições confiáveis</div>
+
+<div class="card">Crédito facilitado e sem burocracia</div>
+
+<div class="card">Suporte completo até a liberação</div>
+
+</div>
+
+</section>
+
 <section id="simulacao">
 
-<h2 style="text-align:center">Simulação de Crédito</h2>
+<h2>Simulação de Crédito</h2>
 
 <form>
 
@@ -166,40 +185,19 @@ font-weight:bold;
 <select>
 
 <option>Tipo de crédito</option>
-<option>FGTS</option>
-<option>INSS</option>
+
+<option>Antecipação FGTS</option>
+
+<option>Crédito INSS</option>
+
 <option>Bolsa Família</option>
-<option>Conta de energia</option>
-<option>Limpa nome</option>
+
+<option>Conta de Energia</option>
+
+<option>Limpa Nome</option>
 
 </select>
-</section>
 
-<section>
-
-<h2 style="text-align:center">Por que escolher a L&L?</h2>
-
-<div class="services">
-
-<div class="card">
-Atendimento rápido e humanizado
-</div>
-
-<div class="card">
-Parcerias com instituições confiáveis
-</div>
-
-<div class="card">
-Crédito facilitado e sem burocracia
-</div>
-
-<div class="card">
-Suporte completo até a liberação
-</div>
-
-</div>
-
-</section>
 <br>
 
 <input placeholder="Valor desejado">
@@ -217,13 +215,12 @@ Suporte completo até a liberação
 <h2>Sobre a L&L</h2>
 
 <p>
-
 A L&L Soluções Financeiras nasceu com o objetivo de facilitar o acesso ao crédito de forma rápida, segura e sem burocracia.
+Atuamos em Campinas e região conectando clientes às melhores oportunidades financeiras do mercado.
+</p>
 
-Trabalhamos com diversas instituições financeiras para oferecer as melhores soluções para nossos clientes.
-
-Nosso compromisso é ajudar pessoas a conquistar seus objetivos através de soluções financeiras acessíveis.
-
+<p>
+Trabalhamos com instituições reconhecidas como Facta Financeira, C6 Bank, Crefisa, Crefaz, Banco Safra, Banco Prata e outras instituições financeiras.
 </p>
 
 </section>
@@ -257,4 +254,5 @@ Nosso compromisso é ajudar pessoas a conquistar seus objetivos através de solu
 <a class="whatsapp" href="https://wa.me/5519987062446?text=Olá vim pelo site da L&L Soluções Financeiras e quero fazer uma simulação">WhatsApp</a>
 
 </body>
+
 </html>
