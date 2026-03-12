@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>L&L Soluções Financeiras</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#0f1c2e;
+color:white;
+}
+
+header{
+background:#0a1422;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+section{
+padding:40px;
+text-align:center;
+}
+
+button{
+background:#d4af37;
+border:none;
+padding:15px 25px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+form{
+margin-top:30px;
+}
+
+input, select{
+padding:10px;
+margin:10px;
+width:250px;
+border-radius:6px;
+border:none;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+L&L Soluções Financeiras
+</header>
+
+<section>
+
+<h1>Realize seus planos com crédito rápido e seguro</h1>
+
+<p>FGTS • INSS • Bolsa Família • Crédito na Conta de Energia</p>
+
+<button onclick="mostrar()">Simular Crédito</button>
+
+<form id="form" style="display:none">
+
+<br>
+
+<input placeholder="Seu nome">
+
+<br>
+
+<input placeholder="WhatsApp">
+
+<br>
+
+<input placeholder="Cidade">
+
+<br>
+
+<select>
+
+<option>Tipo de crédito</option>
+
+<option>Antecipação FGTS</option>
+
+<option>Crédito INSS</option>
+
+<option>Bolsa Família</option>
+
+<option>Conta de Energia</option>
+
+</select>
+
+<br>
+
+<input placeholder="Valor desejado">
+
+<br>
+
+<button>Enviar simulação</button>
+
+</form>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/">WhatsApp</a>
+
+<script>
+
+function mostrar(){
+document.getElementById("form").style.display="block"
+}
+
+</script>
+
+</body>
+</html>
