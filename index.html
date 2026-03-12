@@ -11,23 +11,26 @@
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f1f5f9;
+background:#f4f6f9;
 color:#1e293b;
 }
 
 header{
 background:#0f172a;
 color:white;
-padding:25px;
+padding:30px;
 text-align:center;
-font-size:28px;
-font-weight:bold;
+}
+
+.logo{
+width:120px;
+margin-bottom:10px;
 }
 
 nav{
 background:#1e293b;
-text-align:center;
 padding:12px;
+text-align:center;
 }
 
 nav a{
@@ -38,21 +41,18 @@ font-weight:bold;
 }
 
 .hero{
-padding:120px 20px;
-text-align:center;
-background:linear-gradient(rgba(15,23,42,0.8),rgba(15,23,42,0.8)),url("https://images.unsplash.com/photo-1554224155-6726b3ff858f");
-background-size:cover;
-background-position:center;
+background:#0f172a;
 color:white;
+padding:100px 20px;
+text-align:center;
 }
 
 .hero h1{
-font-size:44px;
+font-size:42px;
 }
 
 .hero p{
 font-size:20px;
-margin-top:10px;
 }
 
 button{
@@ -62,7 +62,6 @@ padding:15px 30px;
 font-size:18px;
 border-radius:8px;
 cursor:pointer;
-color:#0f172a;
 font-weight:bold;
 }
 
@@ -73,31 +72,27 @@ text-align:center;
 
 .services{
 display:flex;
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
 gap:30px;
 margin-top:40px;
 }
 
 .card{
 background:white;
+width:220px;
 padding:25px;
 border-radius:10px;
-width:220px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 font-weight:bold;
 }
 
 form input, form select{
+width:260px;
 padding:12px;
 margin:10px;
-width:260px;
 border-radius:6px;
-border:1px solid #cbd5f5;
-}
-
-form button{
-margin-top:10px;
+border:1px solid #ccc;
 }
 
 .whatsapp{
@@ -105,9 +100,9 @@ position:fixed;
 bottom:25px;
 right:25px;
 background:#25d366;
+color:white;
 padding:18px 22px;
 border-radius:40px;
-color:white;
 font-weight:bold;
 text-decoration:none;
 box-shadow:0 5px 10px rgba(0,0,0,0.3);
@@ -118,7 +113,6 @@ background:#0f172a;
 color:white;
 padding:25px;
 text-align:center;
-margin-top:50px;
 }
 
 </style>
@@ -128,17 +122,24 @@ margin-top:50px;
 <body>
 
 <header>
-L&L Soluções Financeiras
-<br>
-<span style="font-size:16px;">Campinas - SP</span>
+
+<!-- AQUI VAI SUA LOGO -->
+<img src="logo.png" class="logo">
+
+<h2>L&L Soluções Financeiras</h2>
+
+<span>Campinas - SP</span>
+
 </header>
 
 <nav>
+
 <a href="#">Início</a>
 <a href="#servicos">Serviços</a>
 <a href="#simulacao">Simular</a>
 <a href="#sobre">Sobre</a>
 <a href="#consultor">Seja Consultor</a>
+
 </nav>
 
 <section class="hero">
@@ -160,13 +161,9 @@ L&L Soluções Financeiras
 <div class="services">
 
 <div class="card">Antecipação FGTS</div>
-
 <div class="card">Crédito INSS</div>
-
 <div class="card">Bolsa Família</div>
-
 <div class="card">Conta de Energia</div>
-
 <div class="card">Limpa Nome</div>
 
 </div>
@@ -180,11 +177,8 @@ L&L Soluções Financeiras
 <div class="services">
 
 <div class="card">Atendimento rápido</div>
-
 <div class="card">Sem burocracia</div>
-
 <div class="card">Instituições confiáveis</div>
-
 <div class="card">Acompanhamento completo</div>
 
 </div>
@@ -214,15 +208,10 @@ L&L Soluções Financeiras
 <select>
 
 <option>Tipo de crédito</option>
-
 <option>Antecipação FGTS</option>
-
 <option>Crédito INSS</option>
-
 <option>Bolsa Família</option>
-
 <option>Conta de Energia</option>
-
 <option>Limpa Nome</option>
 
 </select>
@@ -245,7 +234,6 @@ L&L Soluções Financeiras
 
 <p>
 A L&L Soluções Financeiras nasceu com o objetivo de facilitar o acesso ao crédito de forma rápida, segura e sem burocracia.
-Atendemos clientes em Campinas e região oferecendo soluções financeiras confiáveis.
 </p>
 
 <p>
@@ -288,7 +276,11 @@ L&L Soluções Financeiras • Campinas - SP
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5519987062446?text=Olá vim pelo site da L&L Soluções Financeiras e quero fazer uma simulação">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/5519987062446?text=Olá vim pelo site da L&L Soluções Financeiras e quero fazer uma simulação">
+
+WhatsApp
+
+</a>
 
 </body>
 
